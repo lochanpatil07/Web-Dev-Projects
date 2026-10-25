@@ -15,29 +15,29 @@
 
         <!-- Buttons -->
         <div class="buttons">
-            <button class="btn function" id="clear">AC</button>
-            <button class="btn function" id="delete">DEL</button>
-            <button class="btn operator">%</button>
-            <button class="btn operator">/</button>
+            <button class="btn function" id="clear" onclick="clearDisplay()">AC</button>
+            <button class="btn function" id="delete" onclick="deleteLast()">DEL</button>
+            <button class="btn operator" onclick="appendCharacter('%')">%</button>
+            <button class="btn operator" onclick="appendCharacter('/')">/</button>
 
-            <button class="btn number">7</button>
-            <button class="btn number">8</button>
-            <button class="btn number">9</button>
-            <button class="btn operator">*</button>
+            <button class="btn number" onclick="appendCharacter('7')">7</button>
+            <button class="btn number" onclick="appendCharacter('8')">8</button>
+            <button class="btn number" onclick="appendCharacter('9')">9</button>
+            <button class="btn operator" onclick="appendCharacter('*')">*</button>
 
-            <button class="btn number">4</button>
-            <button class="btn number">5</button>
-            <button class="btn number">6</button>
-            <button class="btn operator">-</button>
+            <button class="btn number" onclick="appendCharacter('4')">4</button>
+            <button class="btn number" onclick="appendCharacter('5')">5</button>
+            <button class="btn number" onclick="appendCharacter('6')">6</button>
+            <button class="btn operator" onclick="appendCharacter('-')">-</button>
 
-            <button class="btn number">1</button>
-            <button class="btn number">2</button>
-            <button class="btn number">3</button>
-            <button class="btn operator">+</button>
+            <button class="btn number" onclick="appendCharacter('1')">1</button>
+            <button class="btn number" onclick="appendCharacter('2')">2</button>
+            <button class="btn number" onclick="appendCharacter('3')">3</button>
+            <button class="btn operator" onclick="appendCharacter('+')">+</button>
 
-            <button class="btn number zero">0</button>
-            <button class="btn decimal">.</button>
-            <button class="btn equal">=</button>
+            <button class="btn number zero" onclick="appendCharacter('0')">0</button>
+            <button class="btn decimal" onclick="appendCharacter('.')">.</button>
+            <button class="btn equal" onclick="calculator()">=</button>
         </div>
 
     </div>

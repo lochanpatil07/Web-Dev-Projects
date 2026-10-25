@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
 }
 
-.Calculator{
+.calculator{
     background: #e0e5ec;
     padding: 25px;
     border-radius: 30px;
@@ -22,5 +22,58 @@ body{
 }
 
 .display{
-    
+    margin-bottom: 25px;
+}
+
+.result{
+    width: 100%;
+    height: 60px;
+    background: #e0e5ec;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: inset 6px 6px 12px #bec3c9, inset -6px -6px 12px #ffffff;
+    text-align: right;
+    padding: 0 20px;
+    font-size: 28px;
+    color: #555;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn{
+    width: 100%;
+    height: 60px;
+    background: #e0e5ec;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px #bec3c9, -6px -6px 12px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn:active{
+    box-shadow: inset 4px 4px 8px #bec3c9, inset -4px -4px 8px #ffffff;
+}
+
+.function{
+    color: #d13d7c;
+}
+
+.operator{
+    color: #d13d7c;
+}
+
+.equal{
+    grid-column: span 2;
+    width: 135px;
+    color: #d13d7c;
 }
